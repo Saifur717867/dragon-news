@@ -6,7 +6,7 @@ const Logo = () => {
     </>
     return (
         
-        <div className='w-[50%] mx-auto py-10 text-center'>
+        <div className='w-[50%] mx-auto py-6 text-center'>
           {logo}
           <p className="py-4 text-lg text-[#706F6F]">Journalism Without Fear or Favour</p>
           <div>
