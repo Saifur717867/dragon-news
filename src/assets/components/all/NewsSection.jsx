@@ -7,16 +7,16 @@ const NewsSection = ({newsData}) => {
 
     return (
         <div className='grid grid-cols-4 gap-6'>
-            <div className="border">
+            <div className="">
                 <LeftSideBar></LeftSideBar>
             </div>
-            <div className='col-span-2'>
-                <h3>Dragon News Home</h3>
+            <div className='col-span-2 mb-9'>
+                <h3 className="text-2xl font-bold">Dragon News Home</h3>
                 {
-                    newsData.map(news => <BodyContent key={news._id} news={news}></BodyContent>)
+                    newsData.slice(0, 5).map(news => <BodyContent key={news._id} news={news}></BodyContent>)
                 }
             </div>
-            <div className="border">
+            <div className="">
                 <RightSideBar></RightSideBar>
             </div>
 

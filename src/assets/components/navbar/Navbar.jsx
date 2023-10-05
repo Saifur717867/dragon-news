@@ -9,7 +9,7 @@ const Navbar = () => {
         <li className='list-none'><NavLink to={'/career'}>Career</NavLink></li>
     </>
     return (
-        <div className='flex justify-between items-center my-4 ml-[44%]'>
+        <div className='flex justify-between items-center mt-4 mb-16 ml-[44%]'>
             <div className='flex justify-center items-center gap-6'>
                 {navLink}
             </div>

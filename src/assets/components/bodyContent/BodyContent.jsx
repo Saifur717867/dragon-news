@@ -12,7 +12,7 @@ const BodyContent = ({ news }) => {
                     <img className="w-[35px] rounded-full mr-2" src={news.author.img} alt="" />
                     <div>
                         <h4>{news.author.name}</h4>
-                        <p>{moment().format("YY-MM-DD")}</p>
+                        <p>{news.author.published_date}</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-4'>
